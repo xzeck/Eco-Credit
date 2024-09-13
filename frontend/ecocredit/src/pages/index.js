@@ -1,0 +1,15 @@
+export { default as LoginSignup } from "./LoginSignup/LoginSignup";
+export { default as ForgetPassword } from "./ForgetPassword/ForgetPassword";
+export { default as ResetPassword } from "./ResetPassword/ResetPassword";
+export { default as RoleSelection } from "./RoleSelection/RoleSelection";
+export { default as CustomerDashboard } from "./CustomerDashboard/CustomerDashboard";
+export { default as RecyclerDashboard } from "./RecyclerDashboard/RecyclerDashboard";
+export { default as ProfilePage } from "./ProfilePage/ProfilePage";
+export { default as AdminDashboard } from "./Admin/Dashboard/AdminDashboard";
+export { default as ScheduledPickups } from "./Admin/Pickup/Scheduled/ScheduledPickups";
+export { default as CompletedPickups } from "./Admin/Pickup/Completed/CompletedPickups";
+export { default as InProgressPickups } from "./Admin/Pickup/InProgress/InProgressPickups";
+export { default as CreateBid } from "./Admin/Bid/Create/CreateBid";
+export { default as ViewBids } from "./Admin/Bid/View/ViewBids";
+export { default as ViewActiveBids } from "./Admin/Bid/View/ViewActiveBids";
+export { default as PaymentFailurePage } from "./PaymentFailure/PaymentFailure";

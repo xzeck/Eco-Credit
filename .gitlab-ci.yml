@@ -1,0 +1,25 @@
+variables:
+  BRANCH: main
+  FRONTEND: "frontend/ecocredit"
+
+
+stages:
+  - monitor-back-end
+  - monitor-front-end
+
+monitor-server-change:
+  stage: monitor-back-end
+  except:
+    - "*.md"
+  trigger:
+    include:
+      - local: '.gitlab-ci-backend.yml'
+
+
+monitor-frontend-change:
+  stage: monitor-front-end
+  trigger:
+    include:
+      - local: "$FRONTEND/.gitlab-ci-frontend.yml"
+  except:
+    - "*.md"
